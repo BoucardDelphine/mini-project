@@ -1,6 +1,12 @@
 {% extends "../base.twig" %}
 {% block content %}
 
-	test
+	<canvas id="salaries-chart"></canvas>
 
+{% endblock %}
+
+
+{% block javascript %}
+	{{ parent() }}
+	<script src="{{ asset('Salary/salaries.js') }}"></script>
 {% endblock %}

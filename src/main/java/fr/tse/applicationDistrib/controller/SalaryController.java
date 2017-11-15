@@ -35,6 +35,7 @@ public class SalaryController {
 	    List<EmployeeDTO> employeeDTO = modelMapper.map(employee, targetListType);
 		model.addAttribute("listEmployee", employeeDTO);
     	return "/salary/salaries";
+
     }
 	
 }
