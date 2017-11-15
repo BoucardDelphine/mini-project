@@ -8,6 +8,6 @@ import fr.tse.applicationDistrib.entity.Employee;
 
 public interface EmployeeRepository extends JpaRepository<Employee, Long>{
 	
-	List<Employee> findAllOrderBySalaryAsc();
+	List<Employee> findAllByOrderBySalaryAsc();
 
 }
