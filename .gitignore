@@ -187,4 +187,5 @@ $RECYCLE.BIN/
 # End of https://www.gitignore.io/api/java,maven,eclipse,windows,intellij
 
 /src/main/resources/application.properties
+/.idea
 
