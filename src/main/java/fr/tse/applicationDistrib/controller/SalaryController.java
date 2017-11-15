@@ -8,15 +8,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 import fr.tse.applicationDistrib.repository.EmployeeRepository;
 
 @Controller
-public class HomeController {
-	
+public class SalaryController {
+
 	@Autowired
 	EmployeeRepository repo;
 
-	@GetMapping(path = "/")
-    public String home(Model model) {
-    	return "homepage";
+	@GetMapping(path = "/salaries")
+    public String showEmployeeBySalary(Model model) {
+				
+    	return "salary/salaries";
     }
-	
-	
 }
